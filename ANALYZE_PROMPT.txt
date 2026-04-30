@@ -1,0 +1,3 @@
+Please read the EchoKit firmware codebase here, along with anything else that 
+   might help. Then write a summary of the structure, architecture and          
+  operation of this codebase, aimed at someone who wants to modify it.

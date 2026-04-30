@@ -1,0 +1,3 @@
+Could you read the `unsafe` code in `src/audio.rs` here
+carefully? There seems to be some kind of buffer issue, as
+there's weird stuff happening with buffered audio.
