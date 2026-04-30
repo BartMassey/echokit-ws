@@ -18,8 +18,8 @@ at GOSIM Paris 2026.
 ## Set Up EchoKit
 
 * Make sure your browser will work with Bluetooth (Firefox
-  won't). For Chrome / Edge, go to
-  <edge://flags/#enable-experimental-web-platform-features>
+  won't). For Chrome / Chromium / Edge, go to
+  <chrome://flags/#enable-experimental-web-platform-features>
   and enable "Experimental Web Platform features", then
   restart your browser.
 
@@ -105,6 +105,8 @@ on your EchoKit.
 
 ## Build And Install From Source
   
+* Make sure Python `venv` is installed (Debian `python-all-venv`).
+
 * Build the firmware: `cargo build --release`. This will
   take a really long time for first build. You will get some
   warnings.
