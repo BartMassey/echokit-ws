@@ -17,11 +17,17 @@ at GOSIM Paris 2026.
 
 ## Set Up EchoKit
 
-Use the Quick Start guide at
-<https://echokit.dev/docs/get-started/echokit-diy>.
+* Make sure your browser will work with Bluetooth (Firefox
+  won't). For Chrome / Edge, go to
+  <edge://flags/#enable-experimental-web-platform-features>
+  and enable "Experimental Web Platform features", then
+  restart your browser.
 
-Use the conference WiFi and use `ws://edge.echokit.dev/ws`
-as the EchoKit Server.
+* Use the Quick Start guide at
+  <https://echokit.dev/docs/get-started/echokit-diy>.
+
+  Use the conference WiFi and use `ws://edge.echokit.dev/ws`
+  as the EchoKit Server.
 
 ## Get Rust
 
