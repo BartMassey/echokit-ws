@@ -44,6 +44,11 @@ experience.
 * Run `cargo install --locked cargo-espflash espflash ldproxy`
   to get tools for running the built code on your box.
 
+* *For a Linux or Mac host:* Source the environment
+  variables needed by the build environment via
+  `. "$HOME/export-esp.sh"`. Windows *should* be fine
+  without this.
+
 ## Install Stock EchoKit Firmware
 
 Move to the `echokit_boards` directory to get code running
@@ -123,17 +128,19 @@ tested. Note that WSL2 USB is fiddly: I don't recommend
 trying this there unless you have a bunch of WSL2 skill and
 experience.
 
-* Move to the `echokit_box` directory and read `BUILD.sh`
-  there carefully to understand what's going on.
+* Read `BUILD.sh` there carefully to understand what's going
+  on.
   
 * Read the instructions above on hooking up and setting up
   your EchoKit itself.
   
+* Move to the `echokit_box` directory.
+
 * Make sure `curl` is installed on your machine, then run
-  the following in turn.
 
   ```sh
-  bash ./BUILD.sh setup
-  bash ./BUILD.sh dist
-  bash ./BUILD.sh custom
+  bash ../BUILD.sh setup
+  . "$HOME/export-esp.sh"
+  bash ../BUILD.sh dist
+  bash ../BUILD.sh custom
   ```
